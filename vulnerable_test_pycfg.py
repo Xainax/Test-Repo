@@ -5,7 +5,7 @@ import os
 # -----------------------------
 
 def indirect_flow():
-    user_input = input("cmd: ")
+    user_input = input("cmd: ")fjwenjnk
 
     # AST sees only variable assignments + os.system("x")
     # but DOES NOT know "cmd" is tainted
