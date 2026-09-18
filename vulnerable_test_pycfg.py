@@ -1,20 +1,5 @@
 import os
 #random git comments 
-# -----------------------------
-# 1. INDIRECT TAINT THROUGH VARIABLES
-# -----------------------------
-
-def indirect_flow():
-    user_input = input("cmd: ")
-
-    # AST sees only variable assignments + os.system("x")
-    # but DOES NOT know "cmd" is tainted
-    cmd = user_input
-    safe_cmd = cmd
-    final_cmd = safe_cmd
-
-    os.system(final_cmd)  # PyCFG must trace taint across multiple hops
-
 
 # -----------------------------
 # 2. TAINT THROUGH CONDITIONAL LOGIC
