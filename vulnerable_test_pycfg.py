@@ -1,11 +1,11 @@
 import os
-#random git comments 
+#testtest
 # -----------------------------
 # 1. INDIRECT TAINT THROUGH VARIABLES
 # -----------------------------
 
 def indirect_flow():
-    user_input = input("cmd: ")fjwenjnk
+    user_input = input("cmd: ")
 
     # AST sees only variable assignments + os.system("x")
     # but DOES NOT know "cmd" is tainted
